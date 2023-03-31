@@ -8,7 +8,7 @@ public class MyStack {
         this.top = -1;
         this.size = size;
     }
-    
+    // Один из основных методов push для добавления элемента в стек
     public boolean push(int element) {
         if (top >= size - 1) {
             System.out.println("Stack Overflow");
@@ -20,7 +20,7 @@ public class MyStack {
             return true;
         }
     }
-    
+    // Метод pop для извлечения последнего добавленного элемента из стека
     public int pop() {
         if (top < 0) {
             System.out.println("Stack Underflow");
@@ -32,7 +32,7 @@ public class MyStack {
             return element;
         }
     }
-    
+    // Данный метод peek для возврата последнего добавленного элемента без его удаления из стека
     public int peek() {
         if (top < 0) {
             System.out.println("Stack is empty");
