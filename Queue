@@ -6,7 +6,7 @@ public MyQueue(int size) {
 this.queue = new LinkedList<Integer>();
 this.size = size;
 }
-
+// В этом блоке находится метод add для добавления элемента в конец очереди
 public boolean add(int element) {
 if (queue.size() < size) {
 queue.add(element);
@@ -16,7 +16,7 @@ else {
 return false;
 }
 }
-
+// А в этом remove для извлечения и удаления первого элемента из очереди
 public int remove() {
 if (queue.size() > 0) {
 int element = queue.remove(0);
