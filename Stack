@@ -1,0 +1,46 @@
+public class MyStack {
+    private int[] stack;
+    private int top;
+    private int size;
+    
+    public MyStack(int size) {
+        this.stack = new int[size];
+        this.top = -1;
+        this.size = size;
+    }
+    
+    public boolean push(int element) {
+        if (top >= size - 1) {
+            System.out.println("Stack Overflow");
+            return false;
+        }
+        else {
+            top++;
+            stack[top] = element;
+            return true;
+        }
+    }
+    
+    public int pop() {
+        if (top < 0) {
+            System.out.println("Stack Underflow");
+            return 0;
+        } 
+        else {
+            int element = stack[top];
+            top--;
+            return element;
+        }
+    }
+    
+    public int peek() {
+        if (top < 0) {
+            System.out.println("Stack is empty");
+            return 0;
+        } 
+        else {
+            int element = stack[top];
+            return element;
+        }
+    }
+}
