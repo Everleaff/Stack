@@ -1,3 +1,4 @@
+// Выполнил студент Гулевич Роман 2Б
 public class Stack<T> {
     private Node<T> top; // верхний элемент стека
 
